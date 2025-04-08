@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #111c37;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  height: auto;
+  overflow-y: auto;
+}
+
+.section {
+  padding: 80px 20px;
+}
+
+/* Make sure content is responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 15px;
+  }
+}

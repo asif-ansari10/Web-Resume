@@ -1,0 +1,114 @@
+  .contact-container {
+    background: linear-gradient(to right, #141e30, #243b55);
+    padding: 60px 5vw;
+    color: #fff;
+    border-radius: 8px;
+  }
+  
+  .contact-title {
+    position: relative;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .underline {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background: #00e5ff;
+    border-radius: 2px;
+    animation: underline-glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes underline-glow {
+    from {
+      box-shadow: 0 0 4px #00e5ff;
+    }
+    to {
+      box-shadow: 0 0 12px #00fff0;
+    }
+  }
+  
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-info .icon {
+    color: #00e5ff;
+    font-size: 18px;
+  }
+  
+  .contact-info a {
+    color: #00e5ff;
+    text-decoration: none;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    background-color: #1f2d3d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #bbb;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 198, 255, 0.3);
+  }
+  
+  .contact-form button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 198, 255, 0.5);
+  }
+  
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 28px;
+    }
+  
+    .contact-content {
+      flex-direction: column;
+    }
+  }
+  
+  .success-message {
+    color: #00ffcc;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

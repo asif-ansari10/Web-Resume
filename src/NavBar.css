@@ -1,0 +1,121 @@
+/* Transparent sticky navbar */
+nav.navbar.transparent-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(17, 28, 55, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient animated brand name */
+.navbar .navbar-brand {
+  font-size: 32px;
+  font-weight: 800;
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #00bcd4 50%,
+    #ffffff 100%
+  );
+  background-size: 200% auto;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shineText 4s linear infinite;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* Brand hover: keep animation running */
+.navbar .navbar-brand:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Keyframe for glowing shine text */
+@keyframes shineText {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* Nav links */
+.navbar .nav-link.custom-link {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  color: #fff !important;
+}
+
+/* Hover effect for links */
+.navbar .nav-link.custom-link:hover {
+  color: #00bcd4 !important;
+  text-decoration: underline;
+}
+
+/* Active link styling */
+.navbar .nav-link.active-link {
+  color: #00bcd4 !important;
+  font-weight: bold;
+  border-bottom: 2px solid #00bcd4;
+}
+
+/* Center links */
+.custom-center-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Flex control */
+.navbar .container-fluid {
+  flex-wrap: nowrap;
+}
+
+/* Responsive adjustments */
+
+/* Small screens: collapse spacing */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+
+  .custom-center-nav {
+    flex-direction: column;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 22px;
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}
+
+/* Extra small screens: brand size */
+@media (max-width: 576px) {
+  .navbar .navbar-brand {
+    font-size: 20px;
+  }
+}

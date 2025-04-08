@@ -1,0 +1,39 @@
+[
+    {
+      "title": "News India - Website",
+      "description": " A dynamic and responsive news web app to aggregate and display news articles from sources in real-time. The project ensure seamless data fetching. Features category  and smooth routing using React Router.",
+      "technologies": [ "HTML", "CSS" , "JavaScript", "React js", "React Router", "News API"],
+      "img": "news_india",
+      "github": "https://github.com/asif-ansari10/News-India"
+    },
+    {
+      "title": "Communion Hub - Community Event Platform",
+      "description": "Communion Hub is a web platform that allows users to discover, create, and join meaningful events. It fosters connection, interaction, and engagement within diverse communities. The platform promotes cultural and religious exploration while offering users a space to provide and receive support.",
+      "technologies": ["HTML", "CSS", "JavaScript", "React.js", "Cloudinary", "Firebase"],
+      "img": "communion_hub_image",
+      "github": "https://github.com/asif-ansari10/CommunionHub"
+    },
+    {
+      "title": "Portfolio Resume - Personal Website",
+      "description": "A responsive and animated portfolio website built to showcase personal projects, technical skills, and contact information. The site features smooth scroll navigation, section-based layout, and modern UI components to create a professional online presence.",
+      "technologies": ["React.js", "HTML", "CSS", "JavaScript", "EmailJS", "AOS", "Bootstrap"],
+      "img": "portfolio_resume_image",
+      "github": "https://github.com/asif-ansari10/Web-Resume"
+    },
+    {
+      "title": "Chat-App",
+      "description": "A real-time messaging platform with support for text, media sharing, and social media integration. Built for secure and seamless communication across devices.",
+      "technologies": ["React js","Socket.io","Nodejs","Redux-Toolkit","MongoDB","GitHub","bcryptjs","express","nodemon"],
+      "img": "chat_app_image",
+      "github": "https://github.com/asif-ansari10/Chat-App"
+    },
+    {
+      "title": "Game Night – Website",
+      "description": "An interactive game website where users can play, score, and share results. Features dynamic UI, smooth gameplay, and social sharing.",
+      "technologies": ["HTML","CSS","JavaScript","Bootstrap","React js","Node js"],
+      "img": "game_night_image",
+      "github": "https://github.com/asif-ansari10/Game-Night"
+    }    
+    
+  ]
+  

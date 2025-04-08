@@ -1,0 +1,254 @@
+/* Section Container */
+.projects-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  text-align: center;
+}
+
+.project-title {
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.underline {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 3px;
+  background: #00e5ff;
+  border-radius: 2px;
+  animation: underline-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes underline-glow {
+  from {
+    box-shadow: 0 0 4px #00e5ff;
+  }
+  to {
+    box-shadow: 0 0 12px #00fff0;
+  }
+}
+
+/* Glow effect */
+.glow-text {
+  color: #fff;
+  text-shadow:
+    0 0 2px #00bcd4,
+    0 0 4px #00bcd4,
+    0 0 6px #00bcd4;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 2px #00bcd4,
+      0 0 4px #00bcd4,
+      0 0 6px #00bcd4;
+  }
+  to {
+    text-shadow:
+      0 0 4px #00fff0,
+      0 0 6px #00fff0,
+      0 0 8px #00fff0;
+  }
+}
+
+/* Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 10px 40px;
+}
+
+/* Card Styling */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(2, 87, 122, 0.3);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 460px; /* You can adjust this as needed */
+  margin: 0 auto; 
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 229, 255, 0.25);
+}
+
+/* Project Image */
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* more natural image filling */
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.03);
+}
+
+/* Content */
+.project-content {
+  padding: 20px;
+  text-align: left;
+  flex: 1;
+}
+
+.project-heading {
+  font-size: 22px;
+  color: #00e5ff;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.project-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 18px;
+}
+
+.tech-used {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.github-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 198, 255, 0.3);
+}
+
+.github-btn:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  box-shadow: 0 6px 18px rgba(0, 198, 255, 0.5);
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 28px;
+  }
+
+  .project-heading {
+    font-size: 18px;
+  }
+
+  .project-desc {
+    font-size: 14px;
+  }
+
+  .tech-used {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .github-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 12px;
+  }
+
+  .project-img {
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+  .project-content {
+    padding: 14px;
+  }
+
+  .project-heading {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+
+  .project-desc {
+    font-size: 13.5px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    color: #ddd;
+  }
+
+  .tech-used {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    color: #ccc;
+  }
+
+  .github-btn {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-img {
+    max-height: 150px;
+  }
+
+  .project-desc {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .project-card {
+    padding-bottom: 1px;
+  }
+}

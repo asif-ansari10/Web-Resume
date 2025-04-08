@@ -1,41 +1,60 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-scroll';
+import './NavBar.css';
 
 export class NavBar extends Component {
   render() {
     return (
-      <div>
-  <nav className="navbar navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="/"><h1>Asif Ansari</h1></a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav className="navbar navbar-expand-lg navbar-dark transparent-navbar">
+  <div className="container-fluid d-flex justify-content-between align-items-center">
+    
+    <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="navbar-brand mb-0"
+          >
+            Asif Naseem Ansari
+          </Link>
+
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent"
+      aria-controls="navbarContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <div className="nav justify-content-center">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/About">About</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Resume</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Projects</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Contacts</a>
-        </li>
+
+    <div className="collapse navbar-collapse justify-content-center" id="navbarContent">
+      <ul className="navbar-nav custom-center-nav">
+        {['home', 'about', 'resume', 'projects', 'contacts'].map((section) => (
+          <li className="nav-item mx-2" key={section}>
+            <Link
+              className="nav-link custom-link"
+              activeClass="active-link"
+              to={section}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </Link>
+          </li>
+        ))}
       </ul>
-      </div>
     </div>
   </div>
-  </nav>
-      </div>
-    )
+</nav>
+
+    );
   }
 }
 
-export default NavBar ; 
+export default NavBar;
