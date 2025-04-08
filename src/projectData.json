@@ -33,7 +33,15 @@
       "technologies": ["HTML","CSS","JavaScript","Bootstrap","React js","Node js"],
       "img": "game_night_image",
       "github": "https://github.com/asif-ansari10/Game-Night"
-    }    
+    },
+    {
+      "title": "E-Commerce Website",
+      "description": "An intuitive and responsive e-commerce platform designed to deliver a smooth online shopping experience. The website features product browsing, cart management, user authentication, and secure order processing. With a modern UI and robust backend architecture, it ensures fast performance, scalability, and maintainability.",
+      "technologies": ["HTML","CSS","JavaScript","Java","React.js","React Router","Spring Boot","Spring Security","MySQL","Razorpay"],
+      "img": "ecommerce_image",
+      "github": "https://github.com/asif-ansari10/E-Commerce-Website"
+    }
+    
     
   ]
   

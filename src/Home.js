@@ -7,13 +7,15 @@ export default function Home() {
     <div className="Home_container container-md" id="home">
       <div className="Home_content row align-items-center">
         {/* Image Section */}
-<div className="col-md-6 text-center mb-4 mb-md-0 position-relative" data-aos="fade-down">
-  <div className="image-background-animation"></div>
-  <div className="HomeImgWrapper">
-    <img className="HomeImg img-fluid" src={myimg} alt="Profile" />
-  </div>
-</div>
-
+        <div
+          className="col-md-6 text-center mb-4 mb-md-0 position-relative"
+          data-aos="fade-down"
+        >
+          <div className="image-background-animation"></div>
+          <div className="HomeImgWrapper">
+            <img className="HomeImg img-fluid" src={myimg} alt="Profile" />
+          </div>
+        </div>
 
         {/* Info Section */}
         <div className="col-md-6 text-white" data-aos="fade-right">
@@ -34,7 +36,7 @@ export default function Home() {
               Hire Me
             </a>
             <a
-              href="/Asif_Naseem_Resume.pdf"
+              href="/Asif's Resume.pdf"
               className="custom-btn outline-btn"
               download
             >
