@@ -1,14 +1,10 @@
 import React from "react";
 import "./Home.css";
 import myimg from "./images/myimg.png";
-// import ParticlesBackground from "./ParticlesBackground";
 
 export default function Home() {
   return (
     <div className="Home_container container-md" id="home">
-            {/* Particle effect */}
-            {/* <ParticlesBackground /> */}
-
       <div className="Home_content row align-items-center">
         {/* Image Section */}
 <div className="col-md-6 text-center mb-4 mb-md-0 position-relative" data-aos="fade-down">

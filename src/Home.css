@@ -96,7 +96,7 @@
   
     @keyframes typing-mobile {
       from { width: 0; }
-      to { width: 90%; }
+      to { width: 100%; }
     }
   }
   
@@ -155,7 +155,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -164,6 +164,12 @@
     animation: gradientAnimation 10s ease infinite;
     filter: blur(100px);
     z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+    backface-visibility: hidden;
+    will-change: transform;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+
   }
   
   .HomeImg {
