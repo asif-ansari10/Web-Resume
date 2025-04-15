@@ -25,7 +25,7 @@
       "description": "A real-time messaging platform with support for text, media sharing, and social media integration. Built for secure and seamless communication across devices.",
       "technologies": ["React js","Socket.io","Nodejs","Redux-Toolkit","MongoDB","GitHub","bcryptjs","express","nodemon"],
       "img": "chat_app_image",
-      "github": "https://github.com/asif-ansari10/Chat-App"
+      "github": "https://github.com/asif-ansari10/Chat-Application"
     },
     {
       "title": "Game Night – Website",

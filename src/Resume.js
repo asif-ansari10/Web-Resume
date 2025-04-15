@@ -89,10 +89,10 @@ const Resume = () => {
                   <span className="cert-icon">🎓</span>
                   <p>Data Structures – Coursera</p>
                 </div>
-                <div className="certification-item">
+                {/* <div className="certification-item">
                   <span className="cert-icon">🎓</span>
                   <p>JAVA Backend Development – GeeksForGeeks</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
