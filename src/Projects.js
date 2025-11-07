@@ -7,6 +7,8 @@ import communion_hub_image from './images/communion_hub_image.png';
 import game_night_image from './images/Game_Night_image.png';
 import chat_app_image from './images/chat_app_image.png'
 import ecommerce_image from './images/ecommerce_image.png';
+import webdrive_image from './images/webdrive_image.png'
+import issuetracker_image from './images/issuetracker_image.png'
 
 const imageMap = {
   news_india: news_india,
@@ -15,6 +17,8 @@ const imageMap = {
   game_night_image : game_night_image,
   chat_app_image : chat_app_image,
   ecommerce_image: ecommerce_image,
+  webdrive_image: webdrive_image,
+  issuetracker_image: issuetracker_image,
 };
 
 export default function Projects() {

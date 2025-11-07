@@ -40,8 +40,21 @@
       "technologies": ["HTML","CSS","JavaScript","Java","React.js","React Router","Spring Boot","Spring Security","MySQL","Razorpay"],
       "img": "ecommerce_image",
       "github": "https://github.com/asif-ansari10/E-Commerce-Website"
+    },
+    {
+      "title": "Drive Website",
+      "description": "A cloud-based file storage and management platform inspired by Google Drive. The application allows users to securely upload, preview, and manage files with features like file organization, authentication, and cloud storage integration. It ensures seamless file handling with a responsive UI, scalable backend, and real-time updates for a smooth user experience.",
+      "technologies": ["HTML","CSS","JavaScript","React.js","React Router","Node.js","Express.js","MongoDB","Cloudinary"],
+      "img": "webdrive_image",
+      "github": "https://github.com/asif-ansari10/Drive-Web"
+    },
+    {
+      "title": "Role-Based Issue Tracker",
+      "description": "Role-Based Issue Tracker | MERN Stack Built a full-stack issue tracking web app with secure role-based access (Admin & Developer), issue assignment, and activity tracking. Implemented JWT authentication, invite-based user onboarding, and responsive UI with light/dark mode. Deployed using Docker and Render.",
+      "technologies": ["HTML","CSS","JavaScript","React.js","React Router","Node.js","Express.js","MongoDB","Cloudinary","Axios", "JWT", "bcrypt", "Docker"],
+      "img": "issuetracker_image",
+      "github": "https://github.com/asif-ansari10/IssueTracker"
     }
-    
     
   ]
   

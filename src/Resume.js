@@ -14,6 +14,9 @@ import git from "./images/git.png";
 import github from "./images/github.jpeg";
 import mysql from "./images/mysql.png";
 import mongodb from "./images/mongodb.png";
+import nodejs from "./images/nodejs.jpg";
+import expressjs from "./images/expressjs.png";
+import kafka from "./images/kafka.png";
 
 const Resume = () => {
   const onButtonClick = () => {
@@ -44,13 +47,21 @@ const Resume = () => {
       <div className="glass-card-container">
         <div className="glass-card">
           <p className="intro-text" data-aos="fade-up" data-aos-delay="100">
-            As a dedicated and passionate web developer, I specialize in
-            creating dynamic and responsive websites using the latest
-            technologies. With over 1 year of experience in front-end and
-            back-end development, I have a strong foundation in HTML, CSS,
-            JavaScript, and frameworks like React js, Node.js and Spring Boot.
-            My keen eye for design ensures I build engaging and user-friendly
-            applications.
+            As a passionate and dedicated Full Stack Web Developer, I specialize
+            in building dynamic, responsive, and user-friendly applications.
+            With hands-on experience in React.js, Node.js, Spring Boot, MySQL
+            and Docker.
+            <br />
+            <br />
+            My expertise spans both frontend and backend development, utilizing
+            technologies like HTML, CSS, JavaScript, MongoDB, and REST APIs. I
+            focus on creating scalable solutions with clean architecture and
+            efficient performance.
+            <br />
+            <br />
+            Currently, I am working at The Web Trix as a Full Stack Developer,
+            continuously enhancing my technical and problem-solving skills while
+            contributing to innovative web solutions.
           </p>
 
           <div className="resume-section">
@@ -65,6 +76,8 @@ const Resume = () => {
               </div>
             </div>
 
+            {/* Experience */}
+
             <div className="resume-subsection" data-aos="fade-left">
               <h3>💼 Experience</h3>
               <div className="resume-item">
@@ -74,9 +87,31 @@ const Resume = () => {
                   <bold> At Unified Mentor</bold>
                 </h6>
                 <p className="resume-date">July 2024 - September 2024</p>
-                <p>Worked on MERN development.</p>
+                <p className="resume-desc">Worked on MERN development.</p>
+              </div>
+              <div className="resume-item">
+                <h4>Full Stack Web Developer Intern</h4>
+                <h6>
+                  {" "}
+                  <bold>At Pandora Softwares</bold>
+                </h6>
+                <p className="resume-date">September 2025 - October 2025</p>
+                <p className="resume-desc">Worked on MERN development.</p>
+              </div>
+              <div className="resume-item">
+                <h4> Full Stack Web Developer</h4>
+                <h6>
+                  {" "}
+                  <bold> At The Web Trix</bold>
+                </h6>
+                <p className="resume-date">November 2025 - Present</p>
+                <p className="resume-desc">
+                  Worked on MERN and SpringBoot development.
+                </p>
               </div>
             </div>
+
+            {/* Certifications */}
 
             <div className="resume-subsection" data-aos="fade-left">
               <h3>📜 Certifications</h3>
@@ -89,10 +124,25 @@ const Resume = () => {
                   <span className="cert-icon">🎓</span>
                   <p>Data Structures – Coursera</p>
                 </div>
-                {/* <div className="certification-item">
+                <div className="certification-item">
                   <span className="cert-icon">🎓</span>
                   <p>JAVA Backend Development – GeeksForGeeks</p>
-                </div> */}
+                </div>
+                <div className="certification-item">
+                  <span className="cert-icon">🎓</span>
+                  <p>Generative AI – Outskill</p>
+                </div>
+                <div className="certification-item">
+                  <span className="cert-icon">🎓</span>
+                  <p>
+                    Oracle Certified Foundations Associate, Developer, DevOps,
+                    Architect – Oracle
+                  </p>
+                </div>
+                <div className="certification-item">
+                  <span className="cert-icon">🎓</span>
+                  <p>Oracle Certified AI Foundations Associate – Oracle</p>
+                </div>
               </div>
             </div>
           </div>
@@ -112,14 +162,13 @@ const Resume = () => {
               ))}
             </div>
 
-          {/* progress bar */}
+            {/* progress bar */}
             <div className="progress-skill-section">
-            <SkillBar label="Java" width="85%" />
-            <SkillBar label="Python" width="75%" />
-            <SkillBar label="HTML / CSS" width="90%" />
-            <SkillBar label="JavaScript" width="80%" />
+              <SkillBar label="Java" width="85%" />
+              <SkillBar label="Python" width="75%" />
+              <SkillBar label="HTML / CSS" width="90%" />
+              <SkillBar label="JavaScript" width="80%" />
             </div>
-
           </div>
 
           {/* Frameworks */}
@@ -134,16 +183,43 @@ const Resume = () => {
             <div className="skill-grid">
               <img src={react} alt="React" className="skill-icon" />
               <img
+                src={expressjs}
+                alt="expressjs"
+                className="skill-icon wide-icon"
+              />
+              <img
                 src={springBoot}
                 alt="Spring Boot"
                 className="skill-icon wide-icon"
               />
             </div>
 
-              {/* progress bar */}
+            {/* progress bar */}
             <div className="progress-skill-section">
-            <SkillBar label="React" width="85%" />
-            <SkillBar label="Spring Boot" width="70%" />
+              <SkillBar label="React" width="85%" />
+              <SkillBar label="Express Js" width="85%" />
+              <SkillBar label="Spring Boot" width="70%" />
+            </div>
+          </div>
+
+          {/* Technologies */}
+          <div
+            className="skill-section"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <strong className="skill-title">
+              <span className="about-icon">🧩</span> Technologies
+            </strong>
+            <div className="skill-grid">
+              <img src={kafka} alt="kafka" className="skill-icon" />
+              <img src={nodejs} alt="nodejs" className="skill-icon wide-icon" />
+            </div>
+
+            {/* progress bar */}
+            <div className="progress-skill-section">
+              <SkillBar label="Kafka" width="70%" />
+              <SkillBar label="Node Js" width="85%" />
             </div>
           </div>
 
@@ -165,10 +241,10 @@ const Resume = () => {
               />
             </div>
 
-              {/* progress bar */}
+            {/* progress bar */}
             <div className="progress-skill-section">
-            <SkillBar label="MySQL" width="80%" />
-            <SkillBar label="MongoDB" width="75%" />
+              <SkillBar label="MySQL" width="80%" />
+              <SkillBar label="MongoDB" width="75%" />
             </div>
           </div>
 
@@ -187,10 +263,10 @@ const Resume = () => {
               <img src={github} alt="github" className="skill-icon wide-icon" />
             </div>
 
-              {/* progress bar */}
+            {/* progress bar */}
             <div className="progress-skill-section">
-            <SkillBar label="Git" width="70%" />
-            <SkillBar label="GitHub" width="85%" />
+              <SkillBar label="Git" width="70%" />
+              <SkillBar label="GitHub" width="85%" />
             </div>
           </div>
 
@@ -208,12 +284,10 @@ const Resume = () => {
               <img src={linux} alt="Linux" className="skill-icon wide-icon" />
             </div>
 
-              {/* progress bar */}
+            {/* progress bar */}
             <div className="progress-skill-section">
-              
-            <SkillBar label="Windows" width="90%" />
-            <SkillBar label="Linux" width="75%" />
-
+              <SkillBar label="Windows" width="90%" />
+              <SkillBar label="Linux" width="75%" />
             </div>
           </div>
 

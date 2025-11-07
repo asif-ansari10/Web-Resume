@@ -420,3 +420,18 @@
     padding: 0 5px 10px;
   }
 }
+
+.resume-date {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4f8dfd; /* elegant blue highlight */
+  letter-spacing: 0.5px;
+}
+
+.resume-desc {
+  margin: 2px 0 12px 0; /* reduces space between lines */
+  font-size: 14px;
+  color: #d1d5db; /* light gray text */
+  line-height: 1.3;
+}
