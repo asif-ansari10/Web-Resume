@@ -36,7 +36,7 @@ export default function Home() {
               Hire Me
             </a>
             <a
-              href="/Asif's Resume.pdf"
+              href="/Asif_Resume.pdf"
               className="custom-btn outline-btn"
               download
             >

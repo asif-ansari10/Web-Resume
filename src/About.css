@@ -1,114 +1,224 @@
-.about-container {
-  padding: 60px 5vw;
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+.about-section {
   width: 100%;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 40px 40px;
-  color: white;
-  text-align: center;
+  padding: 100px 8%;
+  color: #fff;
 }
 
-.about-title {
-  font-size: 36px;
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
   color: #00e5ff;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  font-weight: bold;
   letter-spacing: 2px;
+  margin-bottom: 20px;
   position: relative;
 }
 
-.about-title::after {
-  content: '';
-  display: block;
-  margin: 0.75rem auto 1.5rem;
-  width: 80px;
+.section-title::after {
+  content: "";
+  width: 90px;
   height: 4px;
-  background: linear-gradient(to right, #00e5ff, #00bcd4);
-  border-radius: 2px;
+  background: #00e5ff;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
 }
 
-.about-paragraph {
-  font-size: 17px;
-  line-height: 1.9;
-  margin-bottom: 30px;
-  text-align: justify;
+.about-intro {
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 60px;
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #d1d5db;
 }
 
-.about-paragraph strong {
-  color: #ffcc00;
-  font-size: 18px;
+.about-intro span {
+  color: #00e5ff;
+  font-weight: 700;
 }
 
-.about-link {
+.about-intro strong {
+  color: #ffffff;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.about-card {
+  background: rgba(17, 24, 39, 0.85);
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(12px);
+  transition: all 0.35s ease;
+  height: 100%;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  border-color: #00e5ff;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.25);
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #00e5ff;
+  margin-bottom: 18px;
+}
+
+.about-card h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+}
+
+.about-card p,
+.about-card li {
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.about-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.about-card li {
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   CONNECT BOX
+=========================== */
+
+.connect-box {
+  margin-top: 70px;
+  padding: 45px;
+  text-align: center;
+  border-radius: 20px;
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.connect-icon {
+  font-size: 2.5rem;
+  color: #00e5ff;
+  margin-bottom: 15px;
+}
+
+.connect-box h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.connect-box p {
+  color: #cbd5e1;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+}
+
+.contact-btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 18px;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  padding: 14px 34px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #00e5ff, #0099ff);
   color: #fff;
   text-decoration: none;
-  border-radius: 50px;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 12px rgba(0, 198, 255, 0.3);
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.about-link:hover {
-  background: linear-gradient(to right, #0072ff, #00c6ff);
-  transform: scale(1.05);
-  box-shadow: 0 6px 18px rgba(0, 198, 255, 0.5);
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.45);
 }
 
-/* glow effect */
-.glow-text {
-  color: #fff;
-  text-shadow:
-    0 0 2px #00bcd4,
-    0 0 4px #00bcd4,
-    0 0 6px #00bcd4;
-  animation: glow 2s ease-in-out infinite alternate;
-}
+/* ===========================
+   RESPONSIVE
+=========================== */
 
-@keyframes glow {
-  from {
-    text-shadow:
-      0 0 2px #00bcd4,
-      0 0 4px #00bcd4,
-      0 0 6px #00bcd4;
+@media (max-width: 992px) {
+  .about-section {
+    padding: 80px 6%;
   }
-  to {
-    text-shadow:
-      0 0 4px #00fff0,
-      0 0 6px #00fff0,
-      0 0 8px #00fff0;
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .about-intro {
+    font-size: 1rem;
   }
 }
 
-
-
-/* Responsive styles */
 @media (max-width: 768px) {
-  .about-title {
-    font-size: 28px;
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 
-  .about-paragraph {
-    font-size: 15px;
+  .about-card {
+    padding: 25px;
   }
 
-  .about-link {
-    font-size: 14px;
-    padding: 8px 14px;
+  .connect-box {
+    padding: 35px 20px;
+  }
+
+  .connect-box h3 {
+    font-size: 1.7rem;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 260px;
   }
 }
 
-.about-icon {
-  color: #00e5ff;
-  font-size: 20px;
-  margin-right: 10px;
-  vertical-align: middle;
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-intro {
+    font-size: 0.95rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card-icon {
+    font-size: 1.8rem;
+  }
 }
 
+
+.connect-box {
+  position: relative;
+  z-index: 9999 !important;
+}
+
+.contact-btn {
+  position: relative;
+  z-index: 10000 !important;
+  cursor: pointer;
+}

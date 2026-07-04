@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Trading Portfolio Manager",
+    "client": null,
+    "description": "A full-stack trading portfolio management application that helps users track investments, monitor profits and losses, and manage trading activity efficiently. Includes responsive dashboards, portfolio analytics, and secure data handling.",
+    "role": "Lead Developer",
+    "technologies": ["Next.js", "App Router", "Node.js", "MongoDB"],
+    "github": null,
+    "live": "https://www.tradingportfoliomanager.online"
+  },
+  {
+    "title": "RentFlow – Property Rental Management System",
+    "client": null,
+    "description": "A complete rental management platform for landlords and property owners to manage tenants, rent payments, agreements, and property records, with real-time rent tracking and responsive dashboards.",
+    "role": "Lead Developer",
+    "technologies": ["Next.js", "App Router", "Node.js", "MongoDB"],
+    "github": null,
+    "live": "https://www.rentflow.co.in"
+  },
+  {
+    "title": "CodeMeet – Coding Arena & Event Platform",
+    "client": "Pandora Softwares",
+    "description": "A coding competition and event management platform, similar to Unstop, allowing users to register for coding contests, explore events, and take part in technical activities. Focused on responsive UI, authentication flow, and scalable frontend architecture.",
+    "role": "Lead Developer",
+    "technologies": ["React.js", "Node.js", "Express", "Firebase"],
+    "github": "https://github.com/asif-ansari10/CodeMeet-Coding-Arena",
+    "live": null
+  },
+  {
+    "title": "VisaNauta – Canadian Immigration Marketplace Platform",
+    "client": "VisaNauta",
+    "description": "A real-world Canadian immigration platform focused on automating and simplifying immigration practice management. Contributed production-ready features, client-facing workflows, and scalable frontend modules for a SaaS-based marketplace.",
+    "role": "Lead Developer",
+    "technologies": ["Next.js", "Node.js", "Express", "Supabase", "Stripe Payment", "OAuth2.0"],
+    "github": null,
+    "live": "https://www.visanauta.com"
+  }
+]

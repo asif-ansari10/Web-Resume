@@ -1,60 +1,66 @@
 [
-    {
-      "title": "News India - Website",
-      "description": " A dynamic and responsive news web app to aggregate and display news articles from sources in real-time. The project ensure seamless data fetching. Features category  and smooth routing using React Router.",
-      "technologies": [ "HTML", "CSS" , "JavaScript", "React js", "React Router", "News API"],
-      "img": "news_india",
-      "github": "https://github.com/asif-ansari10/News-India"
-    },
-    {
-      "title": "Communion Hub - Community Event Platform",
-      "description": "Communion Hub is a web platform that allows users to discover, create, and join meaningful events. It fosters connection, interaction, and engagement within diverse communities. The platform promotes cultural and religious exploration while offering users a space to provide and receive support.",
-      "technologies": ["HTML", "CSS", "JavaScript", "React.js", "Cloudinary", "Firebase"],
-      "img": "communion_hub_image",
-      "github": "https://github.com/asif-ansari10/CommunionHub"
-    },
-    {
-      "title": "Portfolio Resume - Personal Website",
-      "description": "A responsive and animated portfolio website built to showcase personal projects, technical skills, and contact information. The site features smooth scroll navigation, section-based layout, and modern UI components to create a professional online presence.",
-      "technologies": ["React.js", "HTML", "CSS", "JavaScript", "EmailJS", "AOS", "Bootstrap"],
-      "img": "portfolio_resume_image",
-      "github": "https://github.com/asif-ansari10/Web-Resume"
-    },
-    {
-      "title": "Chat-App",
-      "description": "A real-time messaging platform with support for text, media sharing, and social media integration. Built for secure and seamless communication across devices.",
-      "technologies": ["React js","Socket.io","Nodejs","Redux-Toolkit","MongoDB","GitHub","bcryptjs","express","nodemon"],
-      "img": "chat_app_image",
-      "github": "https://github.com/asif-ansari10/Chat-Application"
-    },
-    {
-      "title": "Game Night – Website",
-      "description": "An interactive game website where users can play, score, and share results. Features dynamic UI, smooth gameplay, and social sharing.",
-      "technologies": ["HTML","CSS","JavaScript","Bootstrap","React js","Node js"],
-      "img": "game_night_image",
-      "github": "https://github.com/asif-ansari10/Game-Night"
-    },
-    {
-      "title": "E-Commerce Website",
-      "description": "An intuitive and responsive e-commerce platform designed to deliver a smooth online shopping experience. The website features product browsing, cart management, user authentication, and secure order processing. With a modern UI and robust backend architecture, it ensures fast performance, scalability, and maintainability.",
-      "technologies": ["HTML","CSS","JavaScript","Java","React.js","React Router","Spring Boot","Spring Security","MySQL","Razorpay"],
-      "img": "ecommerce_image",
-      "github": "https://github.com/asif-ansari10/E-Commerce-Website"
-    },
-    {
-      "title": "Drive Website",
-      "description": "A cloud-based file storage and management platform inspired by Google Drive. The application allows users to securely upload, preview, and manage files with features like file organization, authentication, and cloud storage integration. It ensures seamless file handling with a responsive UI, scalable backend, and real-time updates for a smooth user experience.",
-      "technologies": ["HTML","CSS","JavaScript","React.js","React Router","Node.js","Express.js","MongoDB","Cloudinary"],
-      "img": "webdrive_image",
-      "github": "https://github.com/asif-ansari10/Drive-Web"
-    },
-    {
-      "title": "Role-Based Issue Tracker",
-      "description": "Role-Based Issue Tracker | MERN Stack Built a full-stack issue tracking web app with secure role-based access (Admin & Developer), issue assignment, and activity tracking. Implemented JWT authentication, invite-based user onboarding, and responsive UI with light/dark mode. Deployed using Docker and Render.",
-      "technologies": ["HTML","CSS","JavaScript","React.js","React Router","Node.js","Express.js","MongoDB","Cloudinary","Axios", "JWT", "bcrypt", "Docker"],
-      "img": "issuetracker_image",
-      "github": "https://github.com/asif-ansari10/IssueTracker"
-    }
-    
-  ]
-  
+  {
+    "title": "News India - Website",
+    "description": "A dynamic and responsive news web app to aggregate and display news articles from sources in real-time. The project ensures seamless data fetching, category-based filtering, and smooth routing using React Router.",
+    "technologies": ["HTML", "CSS", "JavaScript", "React js", "React Router", "News API"],
+    "img": "news_india",
+    "github": "https://github.com/asif-ansari10/News-India",
+    "live": null
+  },
+  {
+    "title": "Communion Hub - Community Event Platform",
+    "description": "Communion Hub is a web platform that allows users to discover, create, and join meaningful events. It fosters connection, interaction, and engagement within diverse communities, while offering a space to give and receive support.",
+    "technologies": ["HTML", "CSS", "JavaScript", "React.js", "Cloudinary", "Firebase"],
+    "img": "communion_hub_image",
+    "github": "https://github.com/asif-ansari10/CommunionHub",
+    "live": null
+  },
+  {
+    "title": "Portfolio Resume - Personal Website",
+    "description": "A responsive and animated portfolio website built to showcase personal projects, technical skills, and contact information. Features smooth scroll navigation, section-based layout, and modern UI components for a professional online presence.",
+    "technologies": ["React.js", "HTML", "CSS", "JavaScript", "EmailJS", "AOS", "Bootstrap"],
+    "img": "portfolio_resume_image",
+    "github": "https://github.com/asif-ansari10/Web-Resume",
+    "live": "https://web-resume-asif-naseem-ansaris-projects.vercel.app/"
+  },
+  {
+    "title": "Chat-App",
+    "description": "A real-time messaging platform with support for text, media sharing, and social media integration. Built for secure and seamless communication across devices.",
+    "technologies": ["React js", "Socket.io", "Node js", "Redux Toolkit", "MongoDB", "bcryptjs", "Express", "nodemon"],
+    "img": "chat_app_image",
+    "github": "https://github.com/asif-ansari10/Chat-Application",
+    "live": null
+  },
+  {
+    "title": "Game Night – Website",
+    "description": "An interactive game website where users can play, score, and share results. Features a dynamic UI, smooth gameplay, and social sharing.",
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "React js", "Node js"],
+    "img": "game_night_image",
+    "github": "https://github.com/asif-ansari10/Game-Night",
+    "live": null
+  },
+  {
+    "title": "E-Commerce Website",
+    "description": "An intuitive and responsive e-commerce platform designed to deliver a smooth online shopping experience, with product browsing, cart management, user authentication, and secure order processing on a scalable backend.",
+    "technologies": ["HTML", "CSS", "JavaScript", "Java", "React.js", "React Router", "Spring Boot", "Spring Security", "MySQL", "Razorpay"],
+    "img": "ecommerce_image",
+    "github": "https://github.com/asif-ansari10/E-Commerce-Website",
+    "live": null
+  },
+  {
+    "title": "Drive Website",
+    "description": "A cloud-based file storage and management platform inspired by Google Drive, allowing users to securely upload, preview, and manage files with authentication and cloud storage integration.",
+    "technologies": ["HTML", "CSS", "JavaScript", "React.js", "React Router", "Node.js", "Express.js", "MongoDB", "Cloudinary"],
+    "img": "webdrive_image",
+    "github": "https://github.com/asif-ansari10/Drive-Web",
+    "live": null
+  },
+  {
+    "title": "Role-Based Issue Tracker",
+    "description": "A full-stack MERN issue tracking app with secure role-based access (Admin & Developer), issue assignment, and activity tracking. Implemented JWT authentication, invite-based onboarding, and a responsive light/dark mode UI. Deployed using Docker and Render.",
+    "technologies": ["HTML", "CSS", "JavaScript", "React.js", "React Router", "Node.js", "Express.js", "MongoDB", "Cloudinary", "Axios", "JWT", "bcrypt", "Docker"],
+    "img": "issuetracker_image",
+    "github": "https://github.com/asif-ansari10/IssueTracker",
+    "live": null
+  }
+]
