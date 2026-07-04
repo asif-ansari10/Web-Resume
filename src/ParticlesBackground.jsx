@@ -1,6 +1,7 @@
+
+
 // ParticlesBackground.jsx
 import React from "react";
-import { Engine } from "tsparticles-engine";
 import { loadBasic } from "tsparticles-basic";
 import Particles from "react-tsparticles";
 
