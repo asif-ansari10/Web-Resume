@@ -1,38 +1,58 @@
 import React from "react";
 import "./Home.css";
 import myimg from "./images/myimg.png";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
+  const scrollToContacts = (e) => {
+    e.preventDefault();
+    const target = document.getElementById("contacts");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Home_container container-md" id="home">
       <div className="Home_content row align-items-center">
-        {/* Image Section */}
+        {/* Info Section — order-1 on mobile so visitors read who you are before the photo loads */}
         <div
-          className="col-md-6 text-center mb-4 mb-md-0 position-relative"
-          data-aos="fade-down"
+          className="col-md-6 text-white order-2 order-md-1"
+          data-aos="fade-right"
         >
-          <div className="image-background-animation"></div>
-          <div className="HomeImgWrapper">
-            <img className="HomeImg img-fluid" src={myimg} alt="Profile" />
-          </div>
-        </div>
+          <span className="availability-badge">
+            <span className="dot" aria-hidden="true"></span>
+            Open to freelance &amp; full-time opportunities
+          </span>
 
-        {/* Info Section */}
-        <div className="col-md-6 text-white" data-aos="fade-right">
-          <h1 className="Name typing ">Asif Naseem Ansari</h1>
+<h1 className="Name">
+  <Typewriter
+    words={["Asif Naseem Ansari"]}
+    loop={1}
+    cursor
+    cursorStyle="|"
+    typeSpeed={150}
+    deleteSpeed={0}
+    delaySpeed={1500}
+  />
+</h1>
           <h2 className="Profession">
-            Software Engineer And Full Stack Developer
+            Software Engineer &amp; Full Stack Developer
           </h2>
           <p className="Intro">
-            I am a passionate full stack developer with a knack for crafting
-            robust and scalable web applications. I have honed my skills in
-            front-end technologies like React and Next.js, as well as back-end
-            technologies like Node.js, MySQL, MongoDB, and Spring Boot.
+            I build robust, scalable web applications end-to-end — from
+            responsive front-ends in React and Next.js to secure back-ends in
+            Node.js, Spring Boot, MySQL, and MongoDB. Currently freelancing
+            with companies to ship production-ready software.
           </p>
 
           {/* Buttons */}
           <div className="button-wrapper mt-4 d-flex gap-3 justify-content-md-start justify-content-center">
-            <a href="#contacts" className="custom-btn primary-btn cta-pulse">
+            <a
+              href="#contacts"
+              className="custom-btn primary-btn cta-pulse"
+              onClick={scrollToContacts}
+            >
               Hire Me
             </a>
             <a
@@ -44,7 +64,20 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        {/* Image Section */}
+        <div
+          className="col-md-6 text-center mb-4 mb-md-0 position-relative order-1 order-md-2"
+          data-aos="fade-down"
+        >
+          <div className="image-background-animation" aria-hidden="true"></div>
+          <div className="HomeImgWrapper">
+            <img className="HomeImg img-fluid" src={myimg} alt="Asif Naseem Ansari" />
+          </div>
+        </div>
+        
       </div>
+      
     </div>
   );
 }

@@ -207,7 +207,7 @@
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 183, 0, 0.25);
   border-radius: 18px;
-  padding: 24px 24px 26px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   backdrop-filter: blur(10px);
@@ -218,6 +218,15 @@
   transform: translateY(-6px);
   border-color: rgba(255, 183, 0, 0.55);
   box-shadow: 0 12px 28px rgba(255, 183, 0, 0.15);
+}
+
+/* Cards without a screenshot yet skip the image block, so this padding
+   is what gives them breathing room instead */
+.freelance-card-body {
+  padding: 24px 24px 26px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .freelance-card-header {

@@ -67,7 +67,7 @@
   border-radius: 20px;
   padding: 30px;
   backdrop-filter: blur(12px);
-  transition: all 0.35s ease;
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
   height: 100%;
 }
 
@@ -81,6 +81,13 @@
   font-size: 2rem;
   color: #00e5ff;
   margin-bottom: 18px;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+/* Icon reacts a beat after the card lifts, adding a little life to the hover */
+.about-card:hover .card-icon {
+  transform: scale(1.15) rotate(-6deg);
 }
 
 .about-card h3 {
@@ -116,12 +123,26 @@
   border-radius: 20px;
   background: rgba(17, 24, 39, 0.9);
   border: 1px solid rgba(0, 229, 255, 0.2);
+  position: relative;
+  z-index: 9999 !important;
 }
 
 .connect-icon {
   font-size: 2.5rem;
   color: #00e5ff;
   margin-bottom: 15px;
+  animation: iconPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(0, 229, 255, 0));
+  }
+  50% {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.6));
+  }
 }
 
 .connect-box h3 {
@@ -145,11 +166,32 @@
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
+  position: relative;
+  z-index: 10000 !important;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .contact-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 20px rgba(0, 229, 255, 0.45);
+}
+
+/* Shine sweep on hover, matching the button style used elsewhere on the site */
+.contact-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  transform: skewX(-25deg);
+  transition: left 0.75s ease;
+}
+
+.contact-btn:hover::before {
+  left: 125%;
 }
 
 /* ===========================
@@ -211,14 +253,15 @@
   }
 }
 
+/* Respect users who've asked for less motion */
+@media (prefers-reduced-motion: reduce) {
+  .connect-icon {
+    animation: none;
+  }
 
-.connect-box {
-  position: relative;
-  z-index: 9999 !important;
-}
-
-.contact-btn {
-  position: relative;
-  z-index: 10000 !important;
-  cursor: pointer;
+  .about-card,
+  .card-icon,
+  .contact-btn {
+    transition: none;
+  }
 }

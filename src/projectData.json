@@ -13,7 +13,7 @@
     "technologies": ["HTML", "CSS", "JavaScript", "React.js", "Cloudinary", "Firebase"],
     "img": "communion_hub_image",
     "github": "https://github.com/asif-ansari10/CommunionHub",
-    "live": null
+    "live": "https://communion-hub-theta-six.vercel.app"
   },
   {
     "title": "Portfolio Resume - Personal Website",
@@ -53,14 +53,6 @@
     "technologies": ["HTML", "CSS", "JavaScript", "React.js", "React Router", "Node.js", "Express.js", "MongoDB", "Cloudinary"],
     "img": "webdrive_image",
     "github": "https://github.com/asif-ansari10/Drive-Web",
-    "live": null
-  },
-  {
-    "title": "Role-Based Issue Tracker",
-    "description": "A full-stack MERN issue tracking app with secure role-based access (Admin & Developer), issue assignment, and activity tracking. Implemented JWT authentication, invite-based onboarding, and a responsive light/dark mode UI. Deployed using Docker and Render.",
-    "technologies": ["HTML", "CSS", "JavaScript", "React.js", "React Router", "Node.js", "Express.js", "MongoDB", "Cloudinary", "Axios", "JWT", "bcrypt", "Docker"],
-    "img": "issuetracker_image",
-    "github": "https://github.com/asif-ansari10/IssueTracker",
-    "live": null
+    "live": "https://drivewebfrontend.vercel.app"
   }
 ]

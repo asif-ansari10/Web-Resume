@@ -94,7 +94,6 @@
 //   }
 // }
 
-
 import "./About.css";
 import {
   FaUserTie,
@@ -107,9 +106,11 @@ import {
 export default function About() {
   return (
     <section className="about-section container" id="about">
-      <h2 className="section-title">About Me</h2>
+      <h2 className="section-title" data-aos="zoom-in">
+        About Me
+      </h2>
 
-      <p className="about-intro">
+      <p className="about-intro" data-aos="fade-up" data-aos-delay="100">
         I'm <span>Asif Naseem Ansari</span>, a passionate
         <strong> Full Stack Developer</strong> specializing in
         <strong> MERN Stack, Java Spring Boot, AI Integration,</strong>
@@ -120,7 +121,7 @@ export default function About() {
 
       <div className="about-grid">
 
-        <div className="about-card">
+        <div className="about-card" data-aos="fade-up" data-aos-delay="150">
           <FaUserTie className="card-icon" />
           <h3>Who I Am</h3>
           <p>
@@ -130,7 +131,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="about-card">
+        <div className="about-card" data-aos="fade-up" data-aos-delay="250">
           <FaLaptopCode className="card-icon" />
           <h3>What I Do</h3>
           <ul>
@@ -142,18 +143,18 @@ export default function About() {
           </ul>
         </div>
 
-        <div className="about-card">
+        <div className="about-card" data-aos="fade-up" data-aos-delay="350">
           <FaRocket className="card-icon" />
           <h3>Experience</h3>
           <ul>
             <li>10+ Full Stack Projects</li>
             <li>Freelance Developer</li>
             <li>Client Based Solutions</li>
-            <li>Deployment & Optimization</li>
+            <li>Deployment &amp; Optimization</li>
           </ul>
         </div>
 
-        <div className="about-card">
+        <div className="about-card" data-aos="fade-up" data-aos-delay="450">
           <FaCloud className="card-icon" />
           <h3>Currently Learning</h3>
           <ul>
@@ -167,8 +168,8 @@ export default function About() {
 
       </div>
 
-      <div className="connect-box">
-        <FaHandshake className="connect-icon"/>
+      <div className="connect-box" data-aos="zoom-in" data-aos-delay="100">
+        <FaHandshake className="connect-icon" />
 
         <h3>Let's Build Something Amazing</h3>
 
@@ -177,21 +178,18 @@ export default function About() {
           and full-time opportunities.
         </p>
 
-<a
-  href="#contacts"
-  className="contact-btn"
-  onClick={(e) => {
-    e.preventDefault();
-    console.log("Clicked");
-
-    document
-      .getElementById("contacts")
-      ?.scrollIntoView({ behavior: "smooth" });
-  }}
->
-  Contact Me
-</a>
-
+        <a
+          href="#contacts"
+          className="contact-btn"
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("contacts")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Contact Me
+        </a>
 
       </div>
 

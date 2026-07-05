@@ -64,7 +64,6 @@
 //   );
 // }
 
-
 import React from "react";
 import "./Project.css";
 import projectData from "./projectData.json";
@@ -78,6 +77,10 @@ import chat_app_image from "./images/chat_app_image.png";
 import ecommerce_image from "./images/ecommerce_image.png";
 import webdrive_image from "./images/webdrive_image.png";
 import issuetracker_image from "./images/issuetracker_image.png";
+import trading_portfolio_manager_image from "./images/Trading_Portfolio_Manager.png";
+import rentflow_image from "./images/RentFlow.png";
+import visanauta from './images/visanauta.png'
+import codemeet from './images/codemeet.png'
 
 const imageMap = {
   news_india: news_india,
@@ -88,6 +91,10 @@ const imageMap = {
   ecommerce_image: ecommerce_image,
   webdrive_image: webdrive_image,
   issuetracker_image: issuetracker_image,
+  trading_portfolio_manager_image: trading_portfolio_manager_image,
+  rentflow_image: rentflow_image,
+  visanauta: visanauta,
+  codemeet: codemeet,
 };
 
 // Small reusable chip for a technology name
@@ -174,24 +181,37 @@ export default function Projects() {
       <div className="freelance-grid" data-aos="fade-down">
         {freelanceData.map((project, index) => (
           <div className="freelance-card" key={index}>
-            <div className="freelance-card-header">
-              <h5 className="project-heading">{project.title}</h5>
-              <span className="role-badge">{project.role}</span>
-            </div>
-
-            {project.client && (
-              <p className="freelance-client">For {project.client}</p>
+            {/* Only render the image block if this project actually has one */}
+            {project.img && (
+              <div className="project-img-wrapper">
+                <img
+                  src={imageMap[project.img]}
+                  alt={project.title}
+                  className="project-img"
+                />
+              </div>
             )}
 
-            <p className="project-desc">{project.description}</p>
+            <div className="freelance-card-body">
+              <div className="freelance-card-header">
+                <h5 className="project-heading">{project.title}</h5>
+                <span className="role-badge">{project.role}</span>
+              </div>
 
-            <div className="tech-used">
-              {project.technologies.map((tech, i) => (
-                <TechChip key={i} name={tech} />
-              ))}
+              {project.client && (
+                <p className="freelance-client">For {project.client}</p>
+              )}
+
+              <p className="project-desc">{project.description}</p>
+
+              <div className="tech-used">
+                {project.technologies.map((tech, i) => (
+                  <TechChip key={i} name={tech} />
+                ))}
+              </div>
+
+              <ProjectLinks live={project.live} github={project.github} />
             </div>
-
-            <ProjectLinks live={project.live} github={project.github} />
           </div>
         ))}
       </div>

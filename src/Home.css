@@ -5,7 +5,7 @@
     background-color: #111c37;
     color: #fff;
   }
-  
+
   /* Image Styling */
   .HomeImg {
     max-width: 100%;
@@ -13,22 +13,60 @@
     mask-image: linear-gradient(to bottom, hsla(100, 40%, 16%) 60%, transparent 100%);
     transition: all 0.3s ease-in-out;
   }
-  
+
   /* Info Styling */
   .Name {
-    font-size: 4.3rem;
+    font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3.4rem);
     font-weight: bold;
+    line-height: 1.15;
     margin-bottom: 1rem;
     word-break: break-word;
+    min-height: 1.2em;
   }
-  
+
+  /* react-simple-typewriter's own wrapper/cursor spans */
+  .Name .Typewriter__wrapper {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  .Name .Typewriter__cursor {
+    color: #00e5ff;
+    font-weight: 300;
+  }
+
+  /* Availability badge */
+  .availability-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #7fe9ff;
+    background: rgba(0, 188, 212, 0.08);
+    border: 1px solid rgba(0, 188, 212, 0.35);
+    padding: 6px 14px;
+    border-radius: 30px;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.2px;
+  }
+
+  .availability-badge .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00e5ff;
+    box-shadow: 0 0 8px #00e5ff;
+    flex-shrink: 0;
+  }
+
   .Profession {
     font-size: 1.5rem;
     color: #fff;
     position: relative;
     margin-bottom: 1rem;
   }
-  
+
   .Profession::after {
     content: '';
     position: absolute;
@@ -38,72 +76,77 @@
     height: 3px;
     background-color: #fff;
   }
-  
+
   .Intro {
     font-size: 1rem;
     line-height: 1.7;
     margin-top: 1rem;
     color: #dcdcdc;
+    max-width: 46ch;
   }
 
   .buttons-container a {
     transition: all 0.3s ease-in-out;
   }
-  
+
   .buttons-container a:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
   }
-  
-  
-  /* Typing Animation */
-  .typing {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid #fff;
-    animation: typing 2.5s steps(30) forwards, blink 0.7s step-end infinite;
+
+  /* Social links row */
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 2.5rem;
+    padding-left: 0.5rem;
   }
-  
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
   }
-  
-  @keyframes blink {
-    0%, 100% { border-color: transparent; }
-    50% { border-color: #fff; }
+
+  .social-links a:hover {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+    color: #111c37;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 188, 212, 0.35);
   }
-  
+
   /* Responsive */
   @media screen and (max-width: 768px) {
-    .Name {
-      font-size: 2rem;
-    }
-  
     .Profession {
       font-size: 1.2rem;
     }
-  
+
     .Intro {
       font-size: 0.95rem;
+      max-width: 100%;
     }
-  
-    .typing {
-      font-size: 2rem;
-      animation: typing-mobile 2.5s steps(25) forwards, blink 0.7s step-end infinite;
-    }
-  
-    @keyframes typing-mobile {
-      from { width: 0; }
-      to { width: 100%; }
+
+    .social-links {
+      justify-content: center;
+      padding-left: 0;
     }
   }
-  
+
   .button-wrapper {
     flex-wrap: wrap;
   }
-  
+
   .custom-btn {
     padding: 12px 28px;
     border-radius: 30px;
@@ -115,13 +158,13 @@
     display: inline-block;
     border: 2px solid transparent;
   }
-  
+
   .primary-btn {
     background-color: #00bcd4;
     color: #fff;
     border-color: #00bcd4;
   }
-  
+
   .primary-btn:hover {
     background-color: transparent;
     color: #00bcd4;
@@ -129,27 +172,27 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 188, 212, 0.2);
   }
-  
+
   .outline-btn {
     background-color: transparent;
     color: #00bcd4;
     border-color: #00bcd4;
   }
-  
+
   .outline-btn:hover {
     background-color: #00bcd4;
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 188, 212, 0.2);
   }
-  
+
   @media screen and (max-width: 576px) {
     .custom-btn {
       width: 100%;
       text-align: center;
     }
   }
-  
+
 /* image background animation */
   .image-background-animation {
     position: absolute;
@@ -171,7 +214,7 @@
     backdrop-filter: blur(100px);
 
   }
-  
+
   .HomeImg {
     position: relative;
     z-index: 2;
@@ -179,7 +222,7 @@
     max-width: 500px;
     transition: all 0.3s ease-in-out;
   }
-  
+
   @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;
@@ -191,69 +234,24 @@
       background-position: 0% 50%;
     }
   }
-  
+
   @media screen and (max-width: 768px) {
     .image-background-animation {
       width: 250px;
       height: 250px;
       filter: blur(80px);
     }
-  
+
     .HomeImg {
       max-width: 300px;
     }
   }
-  
-  /* .HomeImgWrapper {
-    position: relative;
-    display: inline-block;
-    z-index: 2;
-    overflow: hidden;
-  }
-  
-  .HomeImgWrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.4) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    transform: skewX(-20deg);
-    animation: flashAnimation 5s infinite;
-    opacity: 0;
-  } */
-  
-  /* @keyframes flashAnimation {
-    0% {
-      left: -100%;
-      opacity: 0;
-    }
-    10% {
-      left: 100%;
-      opacity: 1;
-    }
-    15% {
-      left: 100%;
-      opacity: 0;
-    }
-    100% {
-      left: 100%;
-      opacity: 0;
-    }
-  }
-   */
 
   .Home_content {
     position: relative;
     z-index: 1;
   }
-  
+
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -268,7 +266,7 @@
       box-shadow: 0 0 0 0 rgba(0, 188, 212, 0);
     }
   }
-  
+
   /* glow text */
 .cta-pulse {
   animation: pulse 2s ease-in-out infinite;

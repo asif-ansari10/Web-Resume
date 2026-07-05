@@ -5,6 +5,7 @@
     "description": "A full-stack trading portfolio management application that helps users track investments, monitor profits and losses, and manage trading activity efficiently. Includes responsive dashboards, portfolio analytics, and secure data handling.",
     "role": "Lead Developer",
     "technologies": ["Next.js", "App Router", "Node.js", "MongoDB"],
+    "img": "trading_portfolio_manager_image",
     "github": null,
     "live": "https://www.tradingportfoliomanager.online"
   },
@@ -14,6 +15,7 @@
     "description": "A complete rental management platform for landlords and property owners to manage tenants, rent payments, agreements, and property records, with real-time rent tracking and responsive dashboards.",
     "role": "Lead Developer",
     "technologies": ["Next.js", "App Router", "Node.js", "MongoDB"],
+    "img": "rentflow_image",
     "github": null,
     "live": "https://www.rentflow.co.in"
   },
@@ -23,6 +25,7 @@
     "description": "A coding competition and event management platform, similar to Unstop, allowing users to register for coding contests, explore events, and take part in technical activities. Focused on responsive UI, authentication flow, and scalable frontend architecture.",
     "role": "Lead Developer",
     "technologies": ["React.js", "Node.js", "Express", "Firebase"],
+    "img": "codemeet",
     "github": "https://github.com/asif-ansari10/CodeMeet-Coding-Arena",
     "live": null
   },
@@ -32,7 +35,18 @@
     "description": "A real-world Canadian immigration platform focused on automating and simplifying immigration practice management. Contributed production-ready features, client-facing workflows, and scalable frontend modules for a SaaS-based marketplace.",
     "role": "Lead Developer",
     "technologies": ["Next.js", "Node.js", "Express", "Supabase", "Stripe Payment", "OAuth2.0"],
+    "img": "visanauta",
     "github": null,
     "live": "https://www.visanauta.com"
+  },
+  {
+    "title": "Role-Based Issue Tracker",
+    "client": null,
+    "description": "A full-stack MERN issue tracking app with secure role-based access (Admin & Developer), issue assignment, and activity tracking. Implemented JWT authentication, invite-based onboarding, and a responsive light/dark mode UI. Deployed using Docker and Render.",
+    "role": "Solo Developer",
+    "technologies": ["HTML", "CSS", "JavaScript", "React.js", "React Router", "Node.js", "Express.js", "MongoDB", "Cloudinary", "Axios", "JWT", "bcrypt", "Docker"],
+    "img": "issuetracker_image",
+    "github": "https://github.com/asif-ansari10/IssueTracker",
+    "live": "https://issuetracker-client.onrender.com"
   }
 ]
